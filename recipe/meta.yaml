@@ -1,5 +1,5 @@
 {% set name = "progress-table" %}
-{% set version = "3.2.2" %}
+{% set version = "3.3.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/progress_table-{{ version }}.tar.gz
-  sha256: 6a415cc7b61f1f3ea2c3fe322d93abb77eb3b6db268b281673d88eee95bf692e
+  sha256: 02cc403e583605cac04cda87bf7751f701781d8e376c0367167d71cb8510eed6
   patches:
     # This patch stops hatch from running hooks.py which won't be present
     # hooks.py simply adjusts URLs in the README.md for PyPI so isn't needed
